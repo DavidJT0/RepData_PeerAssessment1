@@ -98,6 +98,7 @@ Below the code to print the barchart of total number of steps taken each day. al
   		  	 ggtitle("Total number of steps taken each day") + 
 			 theme(plot.title = element_text(face = "bold"))
 ```
+![1](figures/1.png)
 
 Histogram of the total number of steps taken each day. The dotted line is the mean of total number of steps taken per day
 
@@ -117,6 +118,8 @@ Histogram of the total number of steps taken each day. The dotted line is the me
   		  	 ggtitle("Histogram of total number of Steps per day (w/o NAs)") + 
 			 theme(plot.title = element_text(face = "bold"))
 ```
+
+![2](figures/2.png)
 
 ### What is the average daily activity pattern?
 
@@ -153,6 +156,7 @@ Below a time series plot (using ggplot2) of the 5-minute interval (x-axis) and t
   		  	ggtitle("Average Nr. of steps per 5-minute interval") + 
 			theme(plot.title = element_text(face = "bold"))
 ```
+![3](figures/3.png)
 
 ### Imputing missing values
 
@@ -238,6 +242,8 @@ Below the code to print the barchart of total number of steps taken each day. al
 			 theme(plot.title = element_text(face = "bold"))
 ```
 
+![4](figures/4.png)
+
 Histogram of the total number of steps taken each day. The dotted line is the mean of total number of steps taken per day
 
 ```{r A03-09}
@@ -256,6 +262,8 @@ Histogram of the total number of steps taken each day. The dotted line is the me
   		  	 ggtitle("Histogram of total number of Steps per day (filled)") + 
 			 theme(plot.title = element_text(face = "bold"))
 ```
+
+![5](figures/5.png)
 
 The chart below compares the Histograms of filled DataFrame (purple) and Dataframe w/o Nas (blue). The two charts are overlapped. 
 
@@ -288,6 +296,7 @@ The chart below compares the Histograms of filled DataFrame (purple) and Datafra
   		  	 ggtitle("Histograms of total number of Steps (filled and w/o NAs)") + 
 			 theme(plot.title = element_text(face = "bold"))
 ```
+![6](figures/6.png)
 
 From the chart above we can see that the histogram of the filled database (Purple) shows more density around the mean. The purple histogram shows more frequency in the range that includes the mean and shows less dispersion. This was expected as the filled values are the averages of the 5-minute intervals averaged across all days. The estimates of the total daily number of steps will be closer to the average value of actual data.
 
@@ -331,12 +340,4 @@ Makes a panel plot containing a time series plot of the 5-minute interval (x-axi
   		  	ggtitle("Average Nr. of steps per 5-minute interval") + 
 			theme(plot.title = element_text(face = "bold"))
 ```
-
-
-![1](figures/1.png)
-![2](figures/2.png)
-![3](figures/3.png)
-![4](figures/4.png)
-![5](figures/5.png)
-![6](figures/6.png)
 ![7](figures/7.png)
