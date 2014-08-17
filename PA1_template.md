@@ -1,8 +1,5 @@
----
-output: html_document
----
-Reproducible Research
-=====================
+
+#Reproducible Research
 ###Peer Assesment I
 
 ##Introduction
