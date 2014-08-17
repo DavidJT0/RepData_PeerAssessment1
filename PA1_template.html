@@ -108,12 +108,11 @@ individual collected during the months of October and November, 2012 and
 <div id="loading-and-preprocessing-the-data" class="section level2">
 <h2>Loading and preprocessing the data</h2>
 <p>The data for this assignment can be downloaded from the course web site:</p>
-<pre class="r"><code class="r"><span class="comment">##if(!file.exists("./RR_Project1")){dir.create("./RR_Project1")}</span>
-<span class="comment">##setwd("./RR_Project1")</span>
-<span class="comment">##setwd("C:/Users/Davide/Documents/RR_Project1") DELETE!!</span>
-<span class="comment">##fileUrl &lt;- "http://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"</span>
-<span class="comment">##download.file(fileUrl,destfile="Project1_DATA.zip")</span>
-<span class="comment">##unzip("Project1_DATA.zip")</span></code></pre>
+<pre class="r"><code class="r"><span class="keyword">if</span><span class="paren">(</span><span class="operator">!</span><span class="identifier">file.exists</span><span class="paren">(</span><span class="string">"./RR_Project1"</span><span class="paren">)</span><span class="paren">)</span><span class="paren">{</span><span class="identifier">dir.create</span><span class="paren">(</span><span class="string">"./RR_Project1"</span><span class="paren">)</span><span class="paren">}</span>
+<span class="identifier">setwd</span><span class="paren">(</span><span class="string">"./RR_Project1"</span><span class="paren">)</span>
+<span class="identifier">fileUrl</span> <span class="operator">&lt;-</span> <span class="string">"http://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"</span>
+<span class="identifier">download.file</span><span class="paren">(</span><span class="identifier">fileUrl</span>,<span class="identifier">destfile</span><span class="operator">=</span><span class="string">"Project1_DATA.zip"</span><span class="paren">)</span>
+<span class="identifier">unzip</span><span class="paren">(</span><span class="string">"Project1_DATA.zip"</span><span class="paren">)</span></code></pre>
 <p>Dataset: Activity monitoring data [52K]</p>
 <pre class="r"><code class="r"><span class="identifier">DataFrame</span> <span class="operator">&lt;-</span> <span class="identifier">read.csv</span><span class="paren">(</span><span class="string">"activity.csv"</span>,
     <span class="identifier">colClasses</span> <span class="operator">=</span> <span class="identifier">c</span><span class="paren">(</span><span class="string">"integer"</span>, <span class="string">"Date"</span>, <span class="string">"integer"</span><span class="paren">)</span>,
@@ -135,7 +134,7 @@ included in this dataset are:</p>
 <pre class="r"><code class="r"><span class="identifier">xt</span> <span class="operator">&lt;-</span> <span class="identifier">xtable</span><span class="paren">(</span><span class="identifier">summary</span><span class="paren">(</span><span class="identifier">DataFrame</span><span class="paren">)</span><span class="paren">)</span>
 <span class="identifier">print</span><span class="paren">(</span><span class="identifier">xt</span>, <span class="identifier">type</span> <span class="operator">=</span> <span class="string">"html"</span><span class="paren">)</span></code></pre>
 <!-- html table generated in R 3.1.1 by xtable 1.7-3 package -->
-<!-- Sun Aug 17 23:48:20 2014 -->
+<!-- Mon Aug 18 00:13:30 2014 -->
 <table border="1">
 <tbody><tr> <th>  </th> <th>     
 steps
@@ -224,7 +223,7 @@ NA’s :2304
 <pre class="r"><code class="r"><span class="identifier">Table1</span> <span class="operator">&lt;-</span> <span class="identifier">xtable</span><span class="paren">(</span><span class="identifier">Stats1</span><span class="paren">)</span>
 <span class="identifier">print</span><span class="paren">(</span><span class="identifier">Table1</span>, <span class="identifier">type</span> <span class="operator">=</span> <span class="string">"html"</span><span class="paren">)</span></code></pre>
 <!-- html table generated in R 3.1.1 by xtable 1.7-3 package -->
-<!-- Sun Aug 17 23:48:20 2014 -->
+<!-- Mon Aug 18 00:13:30 2014 -->
 <table border="1">
 <tbody><tr> <th>  </th> <th> 
 Stats
@@ -391,7 +390,7 @@ factor variable “type” is added to the dataset tho flag the data as
 <pre class="r"><code class="r"><span class="identifier">Table2</span> <span class="operator">&lt;-</span> <span class="identifier">xtable</span><span class="paren">(</span><span class="identifier">Stats2</span><span class="paren">)</span>
 <span class="identifier">print</span><span class="paren">(</span><span class="identifier">Table2</span>, <span class="identifier">type</span> <span class="operator">=</span> <span class="string">"html"</span><span class="paren">)</span></code></pre>
 <!-- html table generated in R 3.1.1 by xtable 1.7-3 package -->
-<!-- Sun Aug 17 23:48:22 2014 -->
+<!-- Mon Aug 18 00:13:32 2014 -->
 <table border="1">
 <tbody><tr> <th>  </th> <th> 
 Stats
@@ -500,7 +499,7 @@ average value of actual data.</p>
 <span class="identifier">Table3</span> <span class="operator">&lt;-</span> <span class="identifier">xtable</span><span class="paren">(</span><span class="identifier">Stats3</span><span class="paren">)</span>
 <span class="identifier">print</span><span class="paren">(</span><span class="identifier">Table3</span>, <span class="identifier">type</span> <span class="operator">=</span> <span class="string">"html"</span><span class="paren">)</span></code></pre>
 <!-- html table generated in R 3.1.1 by xtable 1.7-3 package -->
-<!-- Sun Aug 17 23:48:24 2014 -->
+<!-- Mon Aug 18 00:13:33 2014 -->
 <table border="1">
 <tbody><tr> <th>  </th> <th> 
 Stats

@@ -24,12 +24,11 @@ library(xtable)
 The data for this assignment can be downloaded from the course web site:
   
 ```{r DataDownload}
-##if(!file.exists("./RR_Project1")){dir.create("./RR_Project1")}
-##setwd("./RR_Project1")
-##setwd("C:/Users/Davide/Documents/RR_Project1") DELETE!!
-##fileUrl <- "http://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
-##download.file(fileUrl,destfile="Project1_DATA.zip")
-##unzip("Project1_DATA.zip")
+if(!file.exists("./RR_Project1")){dir.create("./RR_Project1")}
+setwd("./RR_Project1")
+fileUrl <- "http://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
+download.file(fileUrl,destfile="Project1_DATA.zip")
+unzip("Project1_DATA.zip")
 ```
 
 Dataset: Activity monitoring data [52K]
