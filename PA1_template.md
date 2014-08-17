@@ -331,3 +331,12 @@ Makes a panel plot containing a time series plot of the 5-minute interval (x-axi
   		  	ggtitle("Average Nr. of steps per 5-minute interval") + 
 			theme(plot.title = element_text(face = "bold"))
 ```
+
+
+![1](figure/1.png)
+![2](figure/2.png)
+![3](figure/3.png)
+![4](figure/4.png)
+![5](figure/5.png)
+![6](figure/6.png)
+![7](figure/7.png)
