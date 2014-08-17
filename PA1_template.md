@@ -333,10 +333,10 @@ Makes a panel plot containing a time series plot of the 5-minute interval (x-axi
 ```
 
 
-![1](figure/1.png)
-![2](figure/2.png)
-![3](figure/3.png)
-![4](figure/4.png)
-![5](figure/5.png)
-![6](figure/6.png)
-![7](figure/7.png)
+![1](figures/1.png)
+![2](figures/2.png)
+![3](figures/3.png)
+![4](figures/4.png)
+![5](figures/5.png)
+![6](figures/6.png)
+![7](figures/7.png)
