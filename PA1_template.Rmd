@@ -1,5 +1,7 @@
 ---
-output: html_document
+output:
+  html_document:
+    keep_md: yes
 ---
 Reproducible Research
 =====================
@@ -334,3 +336,4 @@ Makes a panel plot containing a time series plot of the 5-minute interval (x-axi
   		  	ggtitle("Average Nr. of steps per 5-minute interval") + 
 			theme(plot.title = element_text(face = "bold"))
 ```
+
